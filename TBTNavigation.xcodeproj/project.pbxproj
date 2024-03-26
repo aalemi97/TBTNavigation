@@ -12,6 +12,8 @@
 		FE3053C62BB33198006FEE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3053C52BB33198006FEE89 /* Assets.xcassets */; };
 		FE3053C92BB33198006FEE89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3053C72BB33198006FEE89 /* LaunchScreen.storyboard */; };
 		FE3053D72BB33424006FEE89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3053D62BB33424006FEE89 /* MainViewController.swift */; };
+		FE3053DC2BB345A9006FEE89 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3053DB2BB345A9006FEE89 /* Coordinator.swift */; };
+		FE3053DF2BB346B8006FEE89 /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3053DE2BB346B8006FEE89 /* MainVCCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FE3053C82BB33198006FEE89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE3053CA2BB33198006FEE89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TBTNavigation/SupportingFiles/Info/Info.plist; sourceTree = SOURCE_ROOT; };
 		FE3053D62BB33424006FEE89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FE3053DB2BB345A9006FEE89 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FE3053DE2BB346B8006FEE89 /* MainVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				FE3053D52BB332DF006FEE89 /* MainVC */,
+				FE3053D92BB3458C006FEE89 /* Modules */,
 				FE3053D42BB33211006FEE89 /* ApplicationFlow */,
 				FE3053D02BB331DF006FEE89 /* SupportingFiles */,
 			);
@@ -107,9 +112,34 @@
 		FE3053D52BB332DF006FEE89 /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
+				FE3053DD2BB3469C006FEE89 /* Coordinator */,
 				FE3053D62BB33424006FEE89 /* MainViewController.swift */,
 			);
 			path = MainVC;
+			sourceTree = "<group>";
+		};
+		FE3053D92BB3458C006FEE89 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FE3053DA2BB34594006FEE89 /* Coordinator */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FE3053DA2BB34594006FEE89 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FE3053DB2BB345A9006FEE89 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FE3053DD2BB3469C006FEE89 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FE3053DE2BB346B8006FEE89 /* MainVCCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3053DC2BB345A9006FEE89 /* Coordinator.swift in Sources */,
 				FE3053BD2BB33197006FEE89 /* AppDelegate.swift in Sources */,
 				FE3053BF2BB33197006FEE89 /* SceneDelegate.swift in Sources */,
 				FE3053D72BB33424006FEE89 /* MainViewController.swift in Sources */,
+				FE3053DF2BB346B8006FEE89 /* MainVCCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
